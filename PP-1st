@@ -1,0 +1,96 @@
+<!DOCYPE html>
+<html lang="en">
+<머리>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그래밍 판다</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Poor+Story&family=Protest+Riot&family=Sixtyfour&display=swap " rel="stylesheet">
+    <스타일>
+        헤더 {
+            여백 왼쪽: 6em;
+            여백 상단: -50 px;
+            색상: 은
+            폰트 패밀리: "Protest Riot", sans-serif;
+        }
+        .메인 {
+            디스플레이: 플렉스;
+            여백 왼쪽: 6em;
+        }
+        .left {
+            플렉스: 3; /* 플렉스 는 안 배웠음 */
+        }
+        .right {
+            플렉스: 2;
+            여백 왼쪽: 10em; /
+        }
+        육신 {
+            배경-색상: 검은색;
+            색상: 은
+        }
+        풋터 {
+            여백 상단: 12em;
+            여백 왼쪽: 70em;
+            여백 하단: 10em;
+        }
+        .스팸:hover {
+            background-color: silver;
+            커서: 포인터;
+        }
+    </스타일>
+</머리>
+<몸>
+    <header>
+        <h1><p style="font 사이즈: 4em;">
+        <span class="title">로렘 입섬</span>
+        </p></h1>   
+    </header>
+    <메인>
+    <div class="main" style="너비: 80em; 높이: 70em;">
+        <div class="left">
+            <p><i>
+                <h4>로렘 입섬이란?</h4>
+                로렘 입섬은 단순히 인쇄 및 타자 산업의 더미 텍스트입니다.
+                로렘 입섬은 1500년대부터 업계의 표준 더미 텍스트였습니다.
+                알 수 없는 프린터가 활자를 가지고 그것을 스크램블링하여 활자 견본책을 만들었을 때.
+                그것은 5세기뿐만 아니라 전자 타자기로의 도약에도 살아남아 본질적으로 변하지 않았습니다.
+                1960년대에 로렘 입숨 구절이 포함된 레트라셋 시트가 출시되면서 대중화되었습니다.
+                그리고 최근에는 Lorem Ipsum 버전을 포함한 Aldus PageMaker와 같은 데스크톱 퍼블리싱 소프트웨어가 출시되었습니다.
+            </p>
+                <p><br><br>
+ <h4>왜 사용하죠?</h4>
+                    독자가 레이아웃을 볼 때 페이지의 읽을 수 있는 내용에 주의가 산만해진다는 것은 오랜 사실입니다.
+                    Lorem Ipsum을 사용하는 이유는 글자의 분포가 다소 정규적이라는 것입니다.
+                    'Content here, content here'를 사용하는 대신 읽기 쉬운 영어처럼 보이게 합니다.
+                    많은 데스크톱 출판 패키지와 웹 페이지 편집자들은 이제 로렘 입섬을 기본 모델 텍스트로 사용합니다.
+                    그리고 '로렘심품'을 검색하면 아직 걸음마 단계인 많은 웹사이트들이 밝혀질 것입니다.
+                    다양한 버전은 수년에 걸쳐 때로는 우연히, 때로는 의도적으로(주입된 유머 등) 진화해 왔습니다.
+                </p>
+                    <p><br><br>
+                        <h4>어디서 구할 수 있나요?</h4>
+                        로렘 입섬의 구절들은 여러 가지 변형이 있지만, 대부분은 어떤 형태로든 변형을 겪었습니다. 
+                        조금도 믿을 수 없어 보이는 주입된 유머나 무작위적인 단어들에 의해. 
+                        로렘 입섬의 한 구절을 사용할 예정이라면, 
+                        텍스트 중간에 창피한 것이 없는지 확인해야 합니다.
+                        인터넷의 모든 로렘 입섬 생성기는 필요에 따라 미리 정의된 청크를 반복하는 경향이 있습니다. 
+                        이것을 인터넷 최초의 진정한 발전기로 만드는 것입니다.
+                    </p></i>
+                    <br><br><br><br><br>
+                    <hr><br><br><br>
+                        <ul type="square">
+                            <li><a href="https://ofcourse.kr/ "><h4><span class="spam">클릭!</span></a></h4></li><br><br>
+                            <ifram width="560" 높이="315" src="https://www.youtube.com/embed/m2MIpDrF7Es?si=wry9VPDbQdb5fC4t " title="YouTube 비디오 플레이어" frameborder="0" allow="acceler 미터, 자동 재생, 클립보드-쓰기, 암호화된 미디어, 자이로스코프, 픽처 인 픽처, 웹 공유, 레퍼러 정책="strict-origin-크로스 origin" allow full screen></iframe>
+                        </ul>
+        </div>
+        <div class="right">
+            <br><br><br><br><br>
+ <img src="https://www.booooooom.com/wp-content/uploads/2016/04/David-Szakaly06.gif " width="120%">
+            </div>
+    </div>
+    </메인>
+    <발가락>
+        <p>
+            <소>- 2018.08.08 - </소>
+        </p>
+    </발가락>
+</신체>
+</html>
