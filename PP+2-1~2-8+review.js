@@ -213,4 +213,4 @@ player.sayHello("nico");
 
 /*♣function 보내기/받기 코드♣
 function 함수명() {console.log(실행 코드);} ▶ data를 받는 방법, ()안에 data를 추가
-함수명(); ▶ data를 보내는 방법
+함수명(); ▶ data를 보내는 방법*/
