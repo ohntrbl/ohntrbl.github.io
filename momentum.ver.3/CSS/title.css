@@ -1,0 +1,14 @@
+#clock {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 80px;
+  }
+
+  #greeting {
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    /* margin: 10px; */
+}
