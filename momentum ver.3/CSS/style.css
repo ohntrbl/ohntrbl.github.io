@@ -1,0 +1,10 @@
+.hidden {
+    display: none;
+}
+
+/* 여기부터 디자인 */
+
+body {
+    /* background-image: url('https://www.nasa.gov/wp-content/uploads/2022/07/web_first_images_release.png?w=2048'); */
+    background-color: rgb(67, 74, 116);
+}
