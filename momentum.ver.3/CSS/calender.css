@@ -1,0 +1,14 @@
+#calender {
+    text-align: left;
+    padding-left: 10em;
+}
+
+#clock {
+    font-size: 9em;
+    margin-top: -15px;
+}
+
+#date {
+    font-size: 2em;
+}
+
