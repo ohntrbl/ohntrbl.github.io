@@ -26,3 +26,5 @@ if (savedUsername === null) {
 }   else {
     paintGreetings(savedUsername);
 }
+
+localStorage.removeItem(USERNAME_KEY);
