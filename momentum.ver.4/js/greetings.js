@@ -26,5 +26,3 @@ if (savedUsername === null) {
 }   else {
     paintGreetings(savedUsername);
 }
-
-greeting.innerText = "";
