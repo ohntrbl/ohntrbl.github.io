@@ -27,4 +27,4 @@ if (savedUsername === null) {
     paintGreetings(savedUsername);
 }
 
-localStorage.removeItem(USERNAME_KEY);
+greeting.innerText = "";
