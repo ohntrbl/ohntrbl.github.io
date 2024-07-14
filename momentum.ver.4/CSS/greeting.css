@@ -1,34 +1,33 @@
 #greeting {
-  padding: px;
   text-align: center;
-  font-size: 2em;
-  color: rgb(255, 255, 255, 0.8);
-
+  font-size: 35px;
+  color: rgb(255, 255, 255, 0.9);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 1px rgba(94, 94, 94, 0.1);
 }
 
 #login-form {
   text-align: center;
-  font-size: 15px;
 }
 
 #login1 input {
+  margin-top: 10px;
   text-align: center;
-  color: rgb(255, 255, 255, 0.7);
-  font-size: 2em;
+  color: rgb(255, 255, 255, 0.9);
+  font-size: 20px;
   background-color: transparent;
   border: none;
   outline: none;
   border-bottom: 2px solid;
   border-bottom-color: aliceblue;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 #login2 input {
   text-align: center;
-  color: rgb(255, 255, 255, 0.7);
-  font-size: 1em;
-  border-radius: 20px;
+  color: transparent;
+  font-size: none;
   background-color: transparent;
   border: none;
-  margin-top: 20px;
 }
