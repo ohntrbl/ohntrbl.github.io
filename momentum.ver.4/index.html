@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="CSS/todo.css">
     <link rel="stylesheet" href="CSS/greeting.css">
     <link rel="stylesheet" href="CSS/quotes.css">
-    <title>My Momentum</title>
+    <title>Home</title>
     <style>
         body {
             background-color: rgb(20, 20, 20);
             color: aliceblue;
         }
-        header {
-            margin-top: 1.3em;
-        }
         main {
-            margin-top: 5em;
+            margin: 0 auto;
+            display: flex;
+            width: 160vh;
+            height: 78vh;
+            border-radius: 30px;
+            background-color: rgba(166, 182, 194, 0.15);
+            backdrop-filter: blur(10px);
+            box-shadow: 2px 7px 20px 8px rgba(0, 0, 0, 0.2);
         }
         footer {
-            margin-top: 12em;
+            margin-top: -1em;
         }
     </style>
 </head>
 <body>
     <header>
-        <div id="weather">
-            <span></span>
-            <span></span>
-        </div>
         <h1 class="hidden" id="greeting-text"></h1>
         <div id = "greeting">
             </div>
@@ -50,6 +50,7 @@
             </form>
     </header>
     <main>
+        <div id = background></div>
         <div id = calender>
             <h4 id="date">0000년 00월 00일 00요일</h4>
             <h2 id="clock">00:00:00</h2>  
@@ -59,6 +60,10 @@
             <input type="text" placeholder="Write a To Do and press Enter." required>
         </form>
         <ul id="todo-list"></ul>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
         </div>
     </main>
     <footer>
