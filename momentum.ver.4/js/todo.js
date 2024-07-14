@@ -23,7 +23,7 @@ function paintToDo(newTodo) {
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText = "✅";
+    button.innerText = "✔";
     button.addEventListener("click", deleteToDo);
     li.appendChild(span);
     li.appendChild(button);
@@ -35,8 +35,8 @@ function handleToDoSubmit(event) {
     const newTodo = toDoInput.value;
     toDoInput.value = "";
 
-    if (toDos.length >= 5) {
-        alert(`5개를 초과할 수 없어요.`);
+    if (toDos.length >= 8) {
+        alert(`8개를 초과할 수 없어요.`);
         return;
       }
       
