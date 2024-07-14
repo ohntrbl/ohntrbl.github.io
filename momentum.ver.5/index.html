@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/calender.css"> 
+    <link rel="stylesheet" href="CSS/weather.css"> 
+    <link rel="stylesheet" href="CSS/todo.css">
+    <link rel="stylesheet" href="CSS/greeting.css">
+    <link rel="stylesheet" href="CSS/quotes.css">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: rgb(20, 20, 20);
+            color: aliceblue;
+        }
+        main {
+            margin: 0 auto;
+            display: flex;
+            width: 160vh;
+            height: 78vh;
+            border-radius: 30px;
+            background-color: rgba(166, 182, 194, 0.15);
+            backdrop-filter: blur(10px);
+            box-shadow: 2px 7px 20px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            margin-top: -1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <form id="login-form" class="hidden">
+            <input type="text" required placeholder="Enter your username" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+
+        <!-- <h1 class="hidden" id="greeting-text"></h1>
+        <div id = "greeting">
+            </div>
+            <form class="hidden" id="login-form">
+                <div id ="login1">
+                <input
+                required
+                maxlength="15"
+                type="text"
+                placeholder="What is your name?"
+                >
+                </div>
+                <div id ="login2">
+                <input type="submit" value="Log In">
+                </div>
+            </form> -->
+    </header>
+    <main>
+        <div id = background></div>
+        <div id = calender>
+            <h4 id="date">0000년 00월 00일 00요일</h4>
+            <h2 id="clock">00:00:00</h2>  
+        </div>
+        <div id = "todo" >
+        <form id = "todo-form"> 
+            <input type="text" placeholder="Write a To Do and press Enter." required>
+        </form>
+        <ul id="todo-list"></ul>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <button id="logout-button" class="hidden">Logout</button>
+    </main>
+    <footer>
+        <div id="quotes">
+        <span></span>
+        <span></span>
+        </div>
+    </footer>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/date.js"></script>
+</body>
+</html> 
