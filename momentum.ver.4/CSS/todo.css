@@ -1,7 +1,7 @@
 #todo {
     position: absolute;
-    margin-left: 55em;
-    margin-top: -15em;
+    margin-left: 45em;
+    margin-top: 10em;
     width: 50vh;
     height: 20vh;
     font-size: 1em;
@@ -11,6 +11,15 @@
     list-style: none;
     padding-left: 0px;
     color: rgb(255, 255, 255, 0.8);
+}
+
+#todo-list button {
+  background-color: transparent;
+  border: none;
+}
+  
+#todo-list li {
+  padding-bottom: 5px;
 }
   
   /* 인풋이 상자랑 상자 안에 글씨임 */
