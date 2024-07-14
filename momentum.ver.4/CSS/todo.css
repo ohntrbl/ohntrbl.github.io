@@ -25,7 +25,6 @@
   /* 인풋이 상자랑 상자 안에 글씨임 */
 #todo-form input { 
     color: rgb(255, 255, 255, 0.7);
-    font-weight: 700;
     border: none;
     outline: none;
     background-color: transparent;
