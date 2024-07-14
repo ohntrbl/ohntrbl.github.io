@@ -1,0 +1,27 @@
+.hidden {
+    display: none;
+}
+
+body {
+    /* background-color: whitesmoke; */
+    /* background-image: url('https://dynamicmedia.livenationinternational.com/Media/x/n/k/18a6c3cd-b500-4837-afa7-516b74345893.jpg'); */
+    font-family: 'Pretendard-Regular';
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    position: relative;
+}
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
