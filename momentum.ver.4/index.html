@@ -32,7 +32,12 @@
 </head>
 <body>
     <header>
-        <h1 class="hidden" id="greeting-text"></h1>
+        <form id="login-form" class="hidden">
+            <input type="text" required placeholder="Enter your username" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+
+        <!-- <h1 class="hidden" id="greeting-text"></h1>
         <div id = "greeting">
             </div>
             <form class="hidden" id="login-form">
@@ -48,7 +53,7 @@
                 <input type="submit" value="Log In">
                 </div>
             </form>
-    </header>
+    </header> -->
     <main>
         <div id = background></div>
         <div id = calender>
@@ -65,6 +70,7 @@
             <span></span>
             <span></span>
         </div>
+        <button id="logout-button" class="hidden">Logout</button>
     </main>
     <footer>
         <div id="quotes">
