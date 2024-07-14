@@ -1,36 +1,76 @@
-#todo {
-    position: absolute;
-    margin-left: 45em;
-    margin-top: 10em;
-    width: 50vh;
-    height: 20vh;
-    font-size: 1em;
-  }
+const toDoForm = document.getElementById("todo-form");
+const toDoInput = document.querySelector("#todo-form input");
+const toDoList = document.getElementById("todo-list");
 
-#todo-list {
-    list-style: none;
-    padding-left: 0px;
-    color: rgb(255, 255, 255, 0.8);
+const TODOS_KEY = "todos";
+
+let toDos = [];
+
+function saveToDos(){
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
-#todo-list button {
-  background-color: transparent;
-  border: none;
+function deleteToDo(event) {
+    const li = event.target.parentElement;
+    li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
-  
-#todo-list li {
-  padding-bottom: 5px;
+
+function paintToDo(newTodo) {
+    const li = document.createElement("li");
+    li.id = newTodo.id;
+    const span = document.createElement("span");
+    span.innerText = newTodo.text;
+    const button = document.createElement("button");
+    button.innerText = "✔";
+    button.addEventListener("click", deleteToDo);
+    li.appendChild(span);
+    li.appendChild(button);
+    toDoList.appendChild(li);
 }
+
+function handleToDoSubmit(event) {
+    event.preventDefault();
+    const newTodo = toDoInput.value;
+    toDoInput.value = "";
+
+    if (toDos.length >= 8) {
+        alert(`8개를 초과할 수 없어요.`);
+        return;
+      }
+      
+    const newTodoObj = {
+    text: newTodo,
+    id: Date.now()
+    };
+    toDos.push(newTodoObj);
+    paintToDo(newTodoObj);
+    saveToDos();
+}
+
+
+const handleToDoCheck = (event) => {
+    const checkBox = event.target;
+    const li = checkBox.parentNode;
+    const todoText = li.childNodes[1];
+    const index = Array.from(li.parentNode.children).indexOf(li);
   
-  /* 인풋이 상자랑 상자 안에 글씨임 */
-#todo-form input { 
-    color: rgb(255, 255, 255, 0.7);
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font-size: 1em;
-    border-bottom: 2px solid;
-    border-bottom-color: aliceblue;
-    padding-bottom: 10px;
-    width: 40vh;
+    toDos[index].checked = checkBox.checked;
+  
+    if (checkBox.checked) {
+      todoText.style.textDecoration = "line-through";
+    } else {
+      todoText.style.textDecoration = "none";
+    }
+  };
+
+toDoForm.addEventListener("submit", handleToDoSubmit);
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+
+if (savedToDos !== null) {
+  const parsedToDos = JSON.parse(savedToDos);
+  toDos = parsedToDos;
+  parsedToDos.forEach(paintToDo);
 }
