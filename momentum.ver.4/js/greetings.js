@@ -1,54 +1,74 @@
-#greeting {
-  text-align: center;
-  font-size: 35px;
-  color: rgb(255, 255, 255, 0.9);
-  margin-top: 30px;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 1px rgba(94, 94, 94, 0.1);
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
+const logoutButton = document.querySelector("#logout-button");
+
+const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, username);
+    paintGreetings(username);
 }
 
-#login-form {
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 30px;
+function paintGreetings(username) {
+    greeting.innerText = `Vamos, ${username}!`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+    logoutButton.classList.remove(HIDDEN_CLASSNAME); // Show logout button after login
 }
 
-#login-form input {
-  margin-top: 10px;
-  text-align: center;
-  color: rgb(255, 255, 255, 0.9);
-  font-size: 20px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid;
-  border-bottom-color: aliceblue;
-  padding-bottom: 5px;
+function onLogout() {
+    localStorage.removeItem(USERNAME_KEY);
+    greeting.classList.add(HIDDEN_CLASSNAME);
+    logoutButton.classList.add(HIDDEN_CLASSNAME);
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginInput.value = "";
 }
 
-/* #login-form button {
-  text-align: center;
-  color: transparent;
-  font-size: none;
-  background-color: transparent;
-  border: none;
-} */
+logoutButton.addEventListener("click", onLogout);
 
-#logout-button {
-  position: absolute;
-  font-size: 15px;
-  text-align: left;
-  color: rgb(255, 255, 255, 0.2);
-  margin-top: 28.5em;
-  margin-left: 65px;
-  background-color: transparent;
-  border: none;
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+if (savedUsername === null) {
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit", onLoginSubmit);
+} else {
+    paintGreetings(savedUsername);
 }
 
-/* #login2 input {
-  text-align: center;
-  color: transparent;
-  font-size: none;
-  background-color: transparent;
-  border: none;
-} */
+//로그인버튼코드있나찾고싶지않음
+
+//아래는 이전 버전
+// const loginForm = document.querySelector("#login-form");
+// const loginInput = document.querySelector("#login-form input");
+// const greeting = document.querySelector("#greeting");
+
+// const HIDDEN_CLASSNAME = "hidden";
+// const USERNAME_KEY ="username";
+
+// function onLoginSubmit(event) {
+//     event.preventDefault();
+//     loginForm.classList.add(HIDDEN_CLASSNAME);
+//     const username = loginInput.value;
+//     localStorage.setItem(USERNAME_KEY, username);
+//     paintGreetings(username);
+// }
+
+// function paintGreetings(username) {
+//     greeting.innerText = `Vamos, ${username}!`;
+//     greeting.classList.remove(HIDDEN_CLASSNAME);
+// }
+
+// const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+// if (savedUsername === null) {
+//     loginForm.classList.remove(HIDDEN_CLASSNAME);
+//     loginForm.addEventListener("submit", onLoginSubmit); 
+// }   else {
+//     paintGreetings(savedUsername);
+// }
+
+//localStorage.removeItem('username'); <<<<<콘솔에 입력하면 초기화 된다!
