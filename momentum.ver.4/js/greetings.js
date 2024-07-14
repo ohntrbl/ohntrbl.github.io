@@ -26,3 +26,6 @@ if (savedUsername === null) {
 }   else {
     paintGreetings(savedUsername);
 }
+
+
+//localStorage.removeItem('username'); <<<<<콘솔에 입력하면 초기화 된다!
