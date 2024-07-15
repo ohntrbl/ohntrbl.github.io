@@ -1,0 +1,9 @@
+#weather {
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.8);
+    text-align: left;
+    margin-top: 27em;
+    margin-left: 70px;
+}
